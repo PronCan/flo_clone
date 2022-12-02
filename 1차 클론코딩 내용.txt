@@ -1,0 +1,17 @@
+클론코딩
+사이트 선정, 분석
+
+1. 정보설계
+2. 심미성 구성요소 파악
+3. 사용성 구성요소 파악
+4. 매체성 구성요소 파악
+5. 화면설계
+
+분기점 -> 767 / 480
+
+devinn.dev
+https://www.music-flo.com/
+
+
+
+https://docs.google.com/presentation/d/1rc8ui58g-Ec1qBuNOKKktlADoq91R3icvehvqrgRqOg/edit#slide=id.g191c74f4f63_0_0

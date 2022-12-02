@@ -1,0 +1,451 @@
+@import url(http://www.openhiun.com/hangul/nanumbarungothic.css);
+
+$size1 : 1600px;
+$size2 : 1026px;
+$size3 : 1005px;
+$size4 : 767px;
+
+$font_name: 'NanumBarunGothic',sans-serif;
+
+$def_color: #3f3fff;
+$def_text_color: #333;
+$def_text_color_white: #fff;
+
+@mixin setMenuFont {
+    font-family: $font_name;
+    color: $def_text_color;
+    font-weight: 400;
+}
+
+@mixin setMenuFontBold {
+    font-family: $font_name;
+    color: $def_text_color;
+    font-weight: 500;
+}
+
+@mixin setSubMenuFont {
+    font-family: $font_name;
+    color: #8c8c8c;
+    font-size: 13px;
+    font-weight: 400;
+}
+
+@mixin setPlayerFont {
+    font-family: $font_name;
+    color: #989898;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+@mixin setPlayerFontTime {
+    font-family: $font_name;
+    font-size: 12px;
+    font-weight: 700;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: $font_name;
+    font-size: 16px;
+    font-weight: 400;
+    font-size: 100%;
+    color: $def_text_color;
+}
+ul, li {
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+}
+::after, ::before, a, i, em, b {
+    display: inline-block;
+}
+a {
+    text-decoration: none;
+    color: #333;
+}
+
+a:hover {
+    color: $def_color;
+}
+
+.wrap {
+    width: 955px;
+    margin: 0 auto;
+    padding: 95px 80px 40px 80px;
+}
+
+.hidden {
+    display: none;
+}
+
+.active_text {
+    color: $def_color!important;
+}
+
+// 공통 끝
+
+button {
+    background: transparent;
+    border: 0;
+    &:hover {
+        cursor: pointer;
+    }
+    // 임시색 구분
+    // background-color: $def_color;
+    // width: 22px;
+    // height: 22px;
+    // 여기까지 임시
+}
+
+/* header - top_menu */
+header {
+    width: 100%;
+    height: 95px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #fff;
+    z-index: 99;
+    display: flex;
+    .header_wrap {
+        @include setMenuFontBold;
+        position: relative;
+        min-width: 955px;
+        max-width: 1600px;
+        width: 100%;
+        .header_wrap_left {
+            display: flex;
+            h1 {
+                margin: 37px 0 0 81px;
+                vertical-align: middle;
+                a {
+                    span.logo {
+                        width: 55px;
+                        height: 23px;
+                        display: inline-block;
+                        background-image: url(../img/common/sp_logo.png);
+                        background-position: 0 -35px;
+                        overflow: hidden;
+                    }
+                }
+            }
+            nav {
+                display: flex;
+                margin: auto 0px;
+                transform: translateY(-5px);
+                p {
+                    align-content: center;
+                    margin: 34px 0 0 34px;
+                    &:last-child {
+                        margin-right: 34px;
+                    }
+                }
+            }
+            .search_wrap {
+                position: relative;
+                align-content: center;
+                border-radius: 15px;
+                border: 1px solid #d2d2d2;
+                margin: auto 0;
+                padding: 5px 22px;
+                transform: translateY(50%);
+                margin-inline-start: 2px;
+                margin-inline-end: 2px;
+                i {
+                    background-image: url(../img/common/sp_button.png);
+                    background-position: -242px -632px;
+                    width: 25px;
+                    height: 25px;
+                    position: absolute;
+                    left: 5px;
+                }
+                input {
+                    position: relative;
+                    width: 130px;                    
+                    font-size: 13px;
+                    border: 0;
+                    left: 8px;
+                }
+            }
+        }
+        .header_wrap_right {
+            @include setSubMenuFont;
+            display: flex;
+            float: right;
+            margin: -61px 81px 0 0;
+            p {
+                align-content: center;
+                margin: 34px 0 0 34px;
+            }
+        }
+    }
+}
+
+/* footer */
+footer {
+    margin-top: 70px;
+    margin-bottom: 110px;
+    .footer_wrap {
+        @include setMenuFont;
+        font-weight: 700;
+        .footer_fnb {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 20px;
+            overflow: hidden;
+            border-bottom: 1px solid #f5f5f5;
+            nav {
+                display: flex;
+                p {
+                    padding-right: 20px;
+                }
+            }
+            .footer_sns_btn {
+                display: flex;
+                p {
+                    padding-left: 16px;
+                    img {
+                        display: inline-block;
+                        width: 22px;
+                        height: 18px;
+                        vertical-align: middle;
+                    }
+                }
+            }
+        }
+        .footer_company {
+            @include setMenuFont;
+            ul {
+                display: flex;
+                li {
+                    padding: 0 15px 0 16px;
+                    position: relative;
+                    &:first-child {
+                        padding-left: 0px;
+                    }
+                    &::before {
+                        display: block;
+                        position: absolute;
+                        top: 3px;
+                        left: 0;
+                        width: 1px;
+                        height: 12px;
+                        background: #d8d8d8;
+                        content: "";
+                    }
+                    &:first-child::before {
+                        display: none;
+                        content: "";
+                    }
+                }
+            }
+            .footer_address {
+                @include setSubMenuFont;
+                span {
+                    padding: 0 8px;
+                    position: relative;
+                    &:nth-of-type(odd) {
+                        padding-left: 0px;
+                    }
+                    &::before {
+                        display: block;
+                        position: absolute;
+                        top: 1px;
+                        left: 0;
+                        width: 1px;
+                        height: 11px;
+                        background-color: #d8d8d8;
+                        content: "";
+                    }
+                    &:first-child::before {
+                        display: none;
+                        content: "";
+                    }
+                }
+                .addr2 span{
+                    &:nth-of-type(odd)::before {
+                        display: none;
+                        content: "";
+                    }
+                }
+            }
+            .copyright {
+                display: flex;
+                justify-content: space-between;
+                p {
+                    @include setMenuFont;
+                    font-size: 11px;
+                    &:last-child {
+                        @include setSubMenuFont;
+                        font-size: 11px;
+                    }
+                }
+            }
+        }
+        .footer_company2 {
+            @include setMenuFont;
+            ul {
+                display: flex;
+                justify-content: center;
+                li {
+                    padding: 0 15px 0 16px;
+                    position: relative;
+                    &:first-child {
+                        padding-left: 0px;
+                    }
+                    &::before {
+                        display: block;
+                        position: absolute;
+                        top: 2px;
+                        left: 0;
+                        width: 1px;
+                        height: 12px;
+                        background: #d8d8d8;
+                        content: "";
+                    }
+                    &:first-child::before {
+                        display: none;
+                        content: "";
+                    }
+                }
+            }
+            .copyright2 {
+                display: flex;
+                justify-content: center;
+                p {
+                    @include setPlayerFont;
+                    font-size: 12px;
+                }
+            }
+        }
+    }
+}
+
+// bottom player
+.player_section {
+    width: 100%;
+    height: 111px;
+    position: relative;
+    min-width: 955px;
+    background-color: #000;
+    // background-color: #d2d2d2;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: 500;
+    .player_wrap {
+        min-width: 955px;
+        max-width: 1600px;
+        padding: 0 80px 40px 80px;
+        display: flex;
+        margin: 0 auto;
+        justify-content: space-between;
+        .play_now_info {
+            display: flex;
+            color: #989898;
+            margin-top: 24px;
+            img {
+                border-radius: 4px;
+                width: 63px;
+                height: 63px;
+            }
+            p {
+                @include setPlayerFont;
+                margin-left: 10px;
+            }
+        }
+        .player_controller {
+            .player_controller_top{
+                width: 375px;
+                margin: 0 auto;
+                padding-top: 23px;
+                text-align: center;
+                display: flex;
+                justify-content: space-between;
+                .btn_player_repeat {
+                    width: 40px;
+                    height: 40px;
+                    background-image: url(../img/common/sp_button.png);
+                    background-position: 0 -472px;
+                }
+                .btn_player_prev {
+                    width: 40px;
+                    height: 40px;
+                    background-image: url(../img/common/sp_button.png);
+                    background-position: -513px -45px;
+                }
+                .btn_player_play {
+                    width: 40px;
+                    height: 40px;
+                    background-image: url(../img/common/sp_button.png);
+                    background-position: -364px -426px;
+                }
+                .btn_player_next{
+                    width: 40px;
+                    height: 40px;
+                    background-image: url(../img/common/sp_button.png);
+                    background-position: -184px -426px;
+                }
+                .btn_player_shuffle{
+                    width: 40px;
+                    height: 40px;
+                    background-image: url(../img/common/sp_button.png);
+                    background-position: -513px -135px;
+                }
+            }
+            .player_controller_progress{
+                display: flex;
+                align-items: center;
+                .time_current{
+                    @include setPlayerFontTime;
+                    color: #a0a0a0;
+                }
+                input.progress {
+                    width: 400px;
+                    height: 6px;
+                }
+                .time_all {
+                    @include setPlayerFontTime;
+                    color: #646464;
+                }
+            }
+            .player_controller_right {
+                display: block;
+                .like_list {
+                    button.btn_like_list {
+                        background-image: url(../img/common/sp_button.png);
+                        background-position: -193px -558px;
+                        width: 31px;
+                        height: 31px;
+                    }
+                }
+                .volume{
+                    .volume_area{
+                        .btn_volume {
+                            background-image: url(../img/common/sp_button.png);
+                            background-position: -445px -558px;
+                            width: 31px;
+                            height: 31px;
+                        }
+                        .progress_area{
+                            
+                        }
+                    }
+                }
+                .open_list {
+                    .btn_open_list{
+                        background-image: url(../img/common/sp_button.png);
+                        background-position: -373px -558px;
+                        width: 31px;
+                        height: 31px;
+                    }
+                }
+                .play_list {
+
+                }
+            }
+        }
+    }
+}

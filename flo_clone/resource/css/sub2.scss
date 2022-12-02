@@ -1,0 +1,224 @@
+@import './common.scss';
+
+.hidden {
+    display: none;
+}
+
+
+
+.main_wrap {
+    max-width: 1600px;
+    min-width: 800px;
+    margin: 0 auto;
+    padding-top: 50px;
+    .main_tab {
+        margin-top: 2px;
+        overflow: hidden;
+        position: relative;
+        &::before {
+            position: absolute;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            height: 1px;
+            background-color: #eee;
+            content: "";
+        }
+        ul {
+            display: flex;
+            position: relative;
+            width: auto;
+            li {
+                width: auto;
+                display: block;
+                position: relative;
+                min-height: 40px;
+                padding: 11px 7px;
+                font-size: 15px;
+                box-sizing: border-box;
+                line-height: 1.2;
+                text-align: center;
+                border-radius: 0;
+                padding-right: 14px;
+            }
+            li.active {
+                color: $def_color;
+                &::before {
+                    content: "";
+                    position: absolute;
+                    left: 0;
+                    right: 0;
+                    bottom: 0;
+                    height: 2px;
+                    background-color: $def_color;
+                }
+            }
+            li.like {
+                a {
+                    text-align: center;
+                    display: flex;
+                    &::before {
+                        content: '';
+                        background-image: url(../img/common/sp_button.png);
+                        background-position: -697px -482px;
+                        width: 16px;
+                        height: 16px;
+                        margin-right: 3px;
+                    }
+                    &:hover::before {
+                        content: '';
+                        background-image: url(../img/common/sp_button.png);
+                        background-position: -697px -503px;
+                        width: 16px;
+                        height: 16px;
+                        margin-right: 3px;
+                    }
+                }
+            }
+        }
+    }
+    .btn_edit {
+        width: 100%;
+        float: right;
+        padding-right: 15px;
+        font-size: 13px;
+        display: flex;
+        justify-content: flex-end;
+    }
+    .content_list {
+        padding-top: 60px;
+        width: 100%;
+        ul {
+            cursor: pointer;
+            display: flex;
+            width: 100%;
+            flex-wrap: wrap;
+            li {
+                width: 49%;
+                // width: 412px;
+                display: flex;
+                margin-top: 27px;
+                .list_cover {
+                    flex-direction: row;
+                    position: relative;
+                    img {
+                        width: 175px;
+                        height: 175px;
+                        position: relative;
+                        border-radius: 6px;
+                        background-size: cover;
+                        background-repeat: no-repeat;
+                        background-color: #f8f9fa;
+                    }
+                    span.dark_cover {
+                        width: 175px;
+                        height: 175px;
+                        background-color: rgba(0,0,0,0);
+                        border-radius: 6px;
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        &:hover {
+                            background-color: rgba(0,0,0, 0.3);
+                        }
+                    }
+                    span.new_list {
+                        position: relative;
+                        display: inline-block;
+                        width: 175px;
+                        height: 175px;
+                        vertical-align: top;
+                        background-color: #f6f6f6;
+                        border-radius: 10px;
+                        .plus {
+                            position: absolute;
+                            top: 0;
+                            right: 0;
+                            bottom: 0;
+                            left: 0;
+                            display: inline-block;
+                            margin: auto;
+                            background-image: url(../img/common/sp_button.png);
+                            background-position: -225px -472px;
+                            width: 40px;
+                            height: 40px;
+                            color: transparent;
+                            text-indent: 100%;
+                            vertical-align: middle;
+                            white-space: nowrap;
+                            overflow: hidden;
+                        }
+                        span.dark_cover2 {
+                            width: 175px;
+                            height: 175px;
+                            background-color: rgba(0,0,0,0);
+                            border-radius: 6px;
+                            position: absolute;
+                            top: 0;
+                            left: 0;
+                            &:hover {
+                                background-color: rgba(0,0,0, 0.1);
+                            }
+                        }
+                    }
+                }
+                .new_list_txt {
+                    display: inline-block;
+                    font-size: 15px;
+                    vertical-align: top;
+                    margin: auto 0px;
+                    a {
+                        color: #3f3fff;
+                    }
+                }
+                .list_info {
+                    display: flex;
+                    flex-direction: column;
+                    position: relative;
+                    p {
+                        margin: 0;
+                        padding: 0;
+                        &:nth-of-type(1) {
+                            padding-top: 15px;
+                            font-size: 15px;
+                            font-weight: 700;
+                        }
+                        &:nth-of-type(2) {
+                            position: relative;
+                            display: inline;
+                            padding: 15px 4px 0 0;
+                            font-size: 13px;
+                        }
+                        &:nth-of-type(3) {
+                            display: block;
+                            padding: 7px 0 0 0;
+                            clear: both;
+                            color: #969696;
+                            position: relative;
+                            font-size: 13px;
+                        }
+                    }
+                    div {
+                        clear: both;
+                        position: absolute;
+                        bottom: 32px;
+                        button {
+                            background-image: url(../img/common/sp_button.png);
+                            background-position: -196px -663px;
+                            width: 23px;
+                            height: 23px;
+                            color: transparent;
+                            text-indent: 100%;
+                            vertical-align: middle;
+                            white-space: nowrap;
+                            overflow: hidden;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .content_like {}
+    .content_count {}
+    .content_recent {}
+}

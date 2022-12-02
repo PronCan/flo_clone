@@ -1,0 +1,278 @@
+@import './common.scss';
+// @import url(./common.css);
+
+$bg_contnet: #989898;
+$bg_card1: rgb(150, 105, 232);
+$bg_card2: #f4f5f8;
+
+@mixin font_card1_title {
+    font-size: 20px;
+    color: $def_text_color_white;
+    font-weight: 600;
+    line-height: 1.2;
+}
+
+@mixin setFontTitle {
+    font-size: 20px;
+    color: #000;
+    font-weight: 600;
+    line-height: 1.2;
+}
+
+@mixin setDescFont {
+    margin-top: 5px;
+    font-size: 13px;
+    line-height: 20px;
+    color: #555;
+}
+
+@mixin setDescAfont {
+    color: rgb(146, 146, 146);
+    font-size: 13px;
+}
+
+.btn {
+    width: auto;
+    height: 32px;
+    background: #fff;
+    line-height: 32px;
+    border-radius: 16px;
+    vertical-align: top;
+    text-align: center;
+    font-size: 16px;
+    padding: 0 15px;
+    color: $def_text_color_white;
+    cursor: pointer;
+}
+.focus {
+    background: $def_color;
+    color: $def_text_color_white;
+    margin-left: 10px;
+    &:hover {
+        color: $def_text_color_white;
+    }
+    a {
+        color: $def_text_color_white;
+    }
+}
+.text_deco {
+    text-decoration: line-through;
+}
+.price {
+    text-decoration: none;
+}
+.first_cost {
+    display: inline-block;
+    margin-right: 10px;
+    font-size: 13px;
+    color: #bdbdbd;
+    vertical-align: middle;
+}
+.set_blue {
+    font-size: 16px;
+    color: #3f3fff;
+}
+.set_red {
+    font-size: 16px;
+    color: #e61313;
+}
+
+main {
+    font-family: $font_name;
+    .inner_wrap {
+        position: relative;
+        min-width: 955px;
+        width: 100%;
+        .inner_menu_wrap {
+            display: flex;
+            justify-content: center;
+            position: relative;
+            nav {
+                display: flex;
+                justify-content: center;
+            }
+            .cuppon_btn {
+                position: absolute;
+                float: right;
+                right: 0;
+                line-height: 32px;
+                border: 1px solid #d2d2d2;
+                border-radius: 16px;
+                height: 32px;
+                width: 100px;
+                font-size: 13px;
+                text-align: center;
+                &:hover {
+                    border: 1px solid $def_color;
+                }
+            }
+        }
+        .card_wrap {
+            .card_list {
+                .card_box {
+                    width: 100%;
+                    border-radius: 8px;
+                    margin-bottom: 20px;
+                    min-height: 200px;
+                    background-color: $bg_card2;
+                    padding: 50px 60px 40px 50px;
+                    display: flex;
+                    box-sizing: border-box;
+                    img {
+                        width: 100%;
+                        border-radius: 8px;
+                    }
+                    .card1_content {
+                        display: flex;
+                        justify-content: center;
+                        position: relative;
+                        align-items: center;
+                        @include font_card1_title;
+                        .first_cost {
+                            margin-right: 5px;
+                            color: hsla(0,0%,100%,.7);
+                            display: inline-block;
+                            font-size: 13px;
+                            vertical-align: middle;
+                            span {
+                                @include font_card1_title;
+                            }
+                        }
+                        a {
+                            position: absolute;
+                            right: 40px;
+                            top: 50%;
+                            font-size: 12px;
+                            color: $def_text_color_white;
+                            transform: translateY(-50%);
+                            &:hover {
+                                color: $def_text_color_white;
+                            }
+                            &::after {
+                                background-image: url(../img/common/sp_icon.png);
+                                background-position: -123px -542px;
+                                width: 15px;
+                                height: 15px;
+                                content: "";
+                                display: inline-block;
+                                vertical-align: middle;
+                            }
+                        }
+                    }
+                    .box_content_left {
+                        display: flex;
+                        justify-content: space-between;
+                        flex-direction: column;
+                        width: 40%;
+                        margin-right: 14px;
+                        padding-bottom: 40px;
+                        div {
+                            p{ 
+                                @include setFontTitle;
+                                margin-top: 4px;
+                            }
+                            p.desc {
+                                @include setDescFont;
+                                font-weight: 400
+                            }
+                        }
+                        a {
+                            @include setDescAfont;
+                            &::after {
+                                background-image: url(../img/common/sp_button.png);
+                                background-repeat: no-repeat;
+                                background-position: -272px -691px;
+                                width: 13px;
+                                height: 13px;
+                                content: "";
+                                display: inline-block;
+                                vertical-align: middle;
+                            }
+                        }
+                    }
+                    .box_content_right {
+                        align-self: center;
+                        border-left: 1px solid rgba(0,0,0,.03);
+                        padding-left: 49px;
+                        width: 60%;
+                        ul {
+                            display: flex;
+                            flex-direction: column;
+                            li {
+                                align-items: center;
+                                display: flex;
+                                font-size: 16px;
+                                color: #181818;
+                                justify-content: space-between;
+                                p {
+                                    margin-left: 10px;
+                                }
+                                .right_btn {
+                                    display: flex;
+                                    align-items: center;
+                                }
+                                .info {
+                                    display: flex;
+                                    max-width: 330px;
+                                    font-size: 11px;
+                                    line-height: 14px;
+                                    color: #929292;
+                                    &::before {
+                                        content: "";
+                                        position: relative;
+                                        display: block;
+                                        margin-right: 4px;
+                                        top: 2px;
+                                        width: 13px;
+                                        height: 13px;
+                                        background: url(../img/common/info.png) 0 0 no-repeat;
+                                        background-size: contain;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                .card1 {
+                    background-color: $bg_card1;
+                    padding: 0 0 40px;
+                    display: block;
+                }
+            }
+            .notice {
+                position: relative;
+                margin-bottom: 20px;
+                padding-top: 40px;
+                padding-bottom: 60px;
+                h3 {
+                    height: 25px;
+                    color: #222;
+                    font-size: 14px;
+                    font-weight: 600;
+                }
+                .gray_dot {
+                    li {
+                        position: relative;
+                        margin-top: 5px;
+                        font-size: 13px;
+                        line-height: 1.4;
+                        color: #777;
+                        padding-bottom: 7px;
+                        padding-left: 10px;
+                        word-break: keep-all;
+                        &::before {
+                            content: "";
+                            position: absolute;
+                            top: 6px;
+                            left: 0;
+                            width: 3px;
+                            height: 3px;
+                            background-color: #d8d8d8;
+                            transform: rotate(45deg);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
