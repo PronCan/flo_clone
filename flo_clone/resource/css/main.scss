@@ -284,7 +284,7 @@ main {
                         padding: 0px;
                         flex-wrap: wrap;
                         .item {
-                            width: 17%;
+                            width: 17.4%;
                             margin-top: 20px;
                             margin-right: 20px;
                             &:hover {
@@ -340,7 +340,7 @@ main {
                         margin: 0px auto;
                         flex-wrap: wrap;
                         .item {
-                            //width값 넣어주기 
+                            width: 17.4%;
                             margin-top: 20px;
                             margin-right: 20px;
                             .content2_img_wrap {
@@ -410,7 +410,7 @@ main {
     }
 }
 
-// media
+// media tablet (move header, main > .item)
 @media (max-width: $size2) {
     main {
         max-width: $size2;
