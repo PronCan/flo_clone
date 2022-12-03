@@ -281,10 +281,8 @@ main {
                         display: flex;
                         flex-direction: row;
                         margin: 0px auto;
-                        padding: 0px;
                         flex-wrap: wrap;
                         .item {
-                            width: 17%;
                             margin-top: 20px;
                             margin-right: 20px;
                             &:hover {
@@ -338,9 +336,7 @@ main {
                         display: flex;
                         flex-direction: row;
                         margin: 0px auto;
-                        flex-wrap: wrap;
                         .item {
-                            //width값 넣어주기 
                             margin-top: 20px;
                             margin-right: 20px;
                             .content2_img_wrap {

@@ -409,4 +409,18 @@ footer .footer_wrap .footer_company2 .copyright2 p {
   background-position: -373px -558px;
   width: 31px;
   height: 31px;
+}
+@media (max-width: 1055px) {
+  header {
+    width: 100%;
+  }
+  header .header_wrap {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+  header .header_wrap_right {
+    margin: 0px;
+    padding: 0px;
+  }
 }/*# sourceMappingURL=common.css.map */

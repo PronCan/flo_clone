@@ -410,6 +410,20 @@ footer .footer_wrap .footer_company2 .copyright2 p {
   width: 31px;
   height: 31px;
 }
+@media (max-width: 1055px) {
+  header {
+    width: 100%;
+  }
+  header .header_wrap {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+  header .header_wrap_right {
+    margin: 0px;
+    padding: 0px;
+  }
+}
 .item div img {
   width: 175px;
   height: 175px;
@@ -669,8 +683,11 @@ main .main_inner .content_wrap .content .content_item .content_sub1 {
   display: flex;
   flex-direction: row;
   margin: 0px auto;
+  padding: 0px;
+  flex-wrap: wrap;
 }
 main .main_inner .content_wrap .content .content_item .content_sub1 .item {
+  width: 17%;
   margin-top: 20px;
   margin-right: 20px;
 }
@@ -728,6 +745,7 @@ main .main_inner .content_wrap .content .content_item .content_sub2 {
   display: flex;
   flex-direction: row;
   margin: 0px auto;
+  flex-wrap: wrap;
 }
 main .main_inner .content_wrap .content .content_item .content_sub2 .item {
   margin-top: 20px;
@@ -796,4 +814,25 @@ main .main_inner .content_wrap .section_content_wrap img {
   width: 100%;
   height: 100%;
   border-radius: 6px;
+}
+
+@media (max-width: 1024px) {
+  main {
+    max-width: 1024px;
+    min-width: 768px;
+    width: 100%;
+  }
+  main .main_inner .content_wrap {
+    width: 100%;
+  }
+  main .main_inner .content_wrap .content {
+    width: 100%;
+    overflow: hidden;
+  }
+  main .main_inner .content_wrap .content .content_item .content_sub1 {
+    flex-wrap: wrap;
+  }
+  main .main_inner .content_wrap .content .content_item .content_sub2 {
+    flex-wrap: wrap;
+  }
 }/*# sourceMappingURL=main.css.map */
