@@ -419,22 +419,372 @@ main {
         max-width: $size2;
         min-width: $size4;
         width: 100%;
+        font-family: $font_name;
         .main_inner {
+            position: relative;
+            margin: 0 auto;
+            .swiper {
+                width: 100%;
+                height: auto;
+                margin-top: 20px;
+                display: flex;
+                position: relative;
+                box-sizing: content-box;
+                flex-wrap: wrap;
+                justify-content: center;
+                .swiper_content {
+                    width: 90%;
+                    height: 600px;
+                    background-color: $bg_colors;
+                    border-radius: 6px;
+                    position: relative;
+                    cursor: pointer;
+                    .swiper_content_left {
+                        cursor: pointer;
+                        position: relative;
+                        width: 30%;
+                        div {
+                            position: relative;
+                            padding: 40px 0 0 40px;
+                            width: 230px;
+                            z-index: 4;
+                            h3 {
+                                margin: 0;
+                                padding: 0;
+                                font-size: 28px;
+                                font-weight: 800;
+                                line-height: 40px;
+                                padding-bottom: 20px;
+                                color: #fff;
+                            }
+                            p {
+                                color: #fff;
+                                font-size: 14px;
+                                font-weight: 100;
+                                line-height: 20px;
+                                position: absolute;
+                                padding: 0;
+                                margin: 0;
+                                span.bar {
+                                    padding: 0 10px;
+                                    font-size: 9px;
+                                    color: #fff;
+                                    opacity: .7;
+                                    text-align: center;
+                                }
+                            }
+                        }
+                        button {
+                            z-index: 4;
+                            background-image: url(../img/common/sp_button.png);
+                            background-position: -119px -208px;
+                            position: absolute;
+                            width: 54px;
+                            height: 54px;
+                            left: 40px;
+                            top: 230px;
+                            bottom: 40px;
+                            &:hover {
+                                background-position: -60px -208px;           
+                            }
+                        }
+                    }
+                    .swiper_content_right {
+                        width: 69%;
+                        display: flex;
+                        float: left;
+                        padding-left: 50%;
+                        position: absolute;
+                        transform: translateY(-110px);
+                        flex-direction: column;
+                        ul {
+                            display: flex;
+                            flex-direction: column;
+                            width: 50%;
+                            li {
+                                display: flex;
+                                width: auto;
+                                padding: 10px 0;
+                                img {
+                                    width: 45px;
+                                    height: 45px;
+                                    border-radius: 4px;
+                                    vertical-align: top;
+                                }
+                                div {
+                                    display: flex;
+                                    flex-direction: column;
+                                    .swiper_title {
+                                        margin: 5px 0 0 20px;
+                                        width: 210px;
+                                        max-width: 210px;
+                                        font-weight: 400;
+                                        font-size: 15px;
+                                        overflow: hidden;
+                                        text-overflow: ellipsis;
+                                        color: #fff;
+                                    }
+                                    .swiper_artist {
+                                        margin: 5px 0 0 20px;
+                                        display: block;
+                                        margin-top: 4px;
+                                        font-size: 12px;
+                                        color: #fff;
+                                        opacity: .6;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                .swiper_controller {
+                    width: 100%;
+                    height: 100%;
+                    position: absolute;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    top: 0;
+                    left: 0;
+                    .swiper_btn {
+                        height: 100%;
+                        align-content: center;
+                        width: 55px;
+                        height: 55px;
+                    }
+                    .btn_left{
+                        left: 0;
+                        background-image: url(../img/common/sp_button.png);
+                        background-position: -248px -60px;
+                        transform: translateX(-55px);
+                        &:hover {
+                            background-position: -248px 0px;
+                        }
+                    }
+                    .btn_right {
+                        right: 0;
+                        background-image: url(../img/common/sp_button.png);
+                        background-position: 0 -208px;
+                        transform: translate(55px);
+                        &:hover {
+                            background-position: -248px -120px;
+                        }
+                    }
+                }
+                .swiper_dot_wrap{
+                    display: flex;
+                    width: 100%;
+                    height: 30px;
+                    margin-top: 30px;
+                    justify-content: center;
+                    padding: 3px 0 10px 15px;
+                    text-align: center;
+                    .swiper_dot {
+                        margin-right: 10px;
+                        cursor: pointer;
+                        width: 6px;
+                        height: 6px;
+                        border-radius: 6px;
+                        background-color: #333;
+                        opacity: .3;
+                    }
+                }
+            }
             .content_wrap {
                 width: 100%;
+                overflow: hidden;
                 .content {
-                    width: 100%;
-                    overflow: hidden;
-                    .content_item {
-                        .content_sub1 {
-                            flex-wrap: wrap;
+                    padding-top: 60px;
+                    .content_title {    // slide
+                        width: 100%;
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                        p {
+                            @include font_content_title;
                         }
+                        div {
+                            display: flex;
+                            height: 28px;
+                            align-items: center;
+                            ul {
+                                display: flex;
+                                @include font_content_sub;
+                                margin: auto 0;
+                                li {
+                                    padding-right: 10px;
+                                }
+                            }
+                            .slide_btn {
+                                @include slide_button;
+                            }
+                        }
+                    }
+                    .content_title2 {   // non slide, sub title
+                        width: 100%;
+                        display: flex;
+                        justify-content: space-between;
+                        flex-direction: column;
+                        p {
+                            @include font_content_title;
+                            margin: 5px 0;
+                            &:last-child {
+                                @include font_content_sub;
+                            }
+                        }
+                    }
+                    .content_item {
+                        display: flex;
+                        flex-wrap: wrap;
+                        .content_sub1,
                         .content_sub2 {
                             flex-wrap: wrap;
+                            width: auto;
                         }
+                        .content_sub1 {
+                            width: 100%;
+                            display: flex;
+                            flex-direction: row;
+                            margin: 0px auto;
+                            padding: 0px;
+                            flex-wrap: wrap;
+                            .item {
+                                width: 17.4%;
+                                margin-top: 20px;
+                                margin-right: 20px;
+                                &:hover {
+                                    cursor: pointer;
+                                }
+                                .content1_img_wrap {
+                                    position: relative;
+                                    width: 175px;
+                                    height: 175px;
+                                    cursor: pointer;
+                                    img {
+                                        border: 0.5px solid rgba(0,0,0,.05);
+                                        border-radius: 6px;
+                                    }
+                                    span.dark_cover {
+                                        width: 100%;
+                                        height: 100%;
+                                        background-color: rgba(0,0,0,0);
+                                        border-radius: 6px;
+                                        position: absolute;
+                                        top: 0;
+                                        left: 0;
+                                        &:hover {
+                                            background-color: rgba(0,0,0, 0.3);
+                                        }
+                                    }
+                                    button.item_play {
+                                        position: absolute;
+                                        bottom: 0;
+                                        right: 0;
+                                        &:hover svg path{
+                                            fill: $def_color;
+                                            stroke: $def_color;
+                                        }
+                                    }
+                                }
+                                .item_title {
+                                    @include font_item_title;
+                                    &:hover {
+                                        color: $def_color;
+                                    }
+                                }
+                                .item_desc {
+                                    @include font_item_desc;
+                                    &:hover {
+                                        color: $def_color;
+                                    }
+                                }
+                            }
+                        }
+                        .content_sub2 {
+                            width: 100%;
+                            display: flex;
+                            flex-direction: row;
+                            margin: 0px auto;
+                            flex-wrap: wrap;
+                            .item {
+                                width: 17.4%;
+                                margin-top: 20px;
+                                margin-right: 20px;
+                                .content2_img_wrap {
+                                    position: relative;
+                                    cursor: pointer;
+                                    img {
+                                        border: 0.5px solid rgba(0,0,0,.05);
+                                        border-radius: 6px;
+                                    }
+                                    img.img_svg {
+                                        width: 68px;
+                                        height: 44px;
+                                        position: absolute;
+                                        bottom: 0;
+                                        left: 0;
+                                        border: 0;
+                                    }
+                                    span.dark_cover {
+                                        // width: 100%;
+                                        width: 68px;
+                                        height: 100%;
+                                        background-color: rgba(0,0,0,0);
+                                        border-radius: 6px;
+                                        position: absolute;
+                                        top: 0;
+                                        left: 0;
+                                        &:hover {
+                                            background-color: rgba(0,0,0, 0.3);
+                                        }
+                                    }
+                                    button.item_play {
+                                        position: absolute;
+                                        bottom: 0;
+                                        right: 0;
+                                        &:hover svg path{
+                                            fill: $def_color;
+                                            stroke: $def_color;
+                                        }
+                                    }
+                                }
+                                .item_title {
+                                    @include font_item_title;
+                                    &:hover {
+                                        color: $def_color;
+                                    }
+                                }
+                                .item_desc {
+                                    @include font_item_desc;
+                                    &:hover {
+                                        color: $def_color;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                .section_content_wrap {
+                    padding-top: 60px;
+                    width: 100%;
+                    height: 172px;
+                    img {
+                        width: 100%;
+                        height: 100%;
+                        border-radius: 6px;
                     }
                 }
             }
         }
     }
+}
+
+// 955px
+@media (max-width: $size3) {
+    
+}
+
+// 767px
+@media (max-width: $size4) {
+
 }

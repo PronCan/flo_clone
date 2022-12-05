@@ -70,6 +70,9 @@ header .header_wrap {
   min-width: 955px;
   max-width: 1600px;
   width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
 }
 header .header_wrap .header_wrap_left {
   display: flex;
@@ -133,7 +136,6 @@ header .header_wrap .header_wrap_right {
   font-weight: 400;
   display: flex;
   float: right;
-  margin: -61px 81px 0 0;
 }
 header .header_wrap .header_wrap_right p {
   align-content: center;
@@ -415,18 +417,103 @@ footer .footer_wrap .footer_company2 .copyright2 p {
   width: 31px;
   height: 31px;
 }
-@media (max-width: 1055px) {
+@media (max-width: 1024px) {
+  .wrap {
+    width: 955px;
+    margin: 0 auto;
+    padding: 95px 160px 0 0;
+  }
   header {
     width: 100%;
+    height: 95px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #fff;
+    z-index: 99;
+    display: flex;
   }
   header .header_wrap {
+    font-family: "NanumBarunGothic", sans-serif;
+    color: #333;
+    font-weight: 500;
+    position: relative;
+    min-width: 955px;
+    max-width: 1600px;
     width: 100%;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
+    flex-direction: column;
+    align-items: flex-start;
   }
-  header .header_wrap_right {
-    margin: 0px;
-    padding: 0px;
+  header .header_wrap .header_wrap_left {
+    display: flex;
+  }
+  header .header_wrap .header_wrap_left h1 {
+    margin: 37px 0 0 81px;
+    vertical-align: middle;
+  }
+  header .header_wrap .header_wrap_left h1 a span.logo {
+    width: 55px;
+    height: 23px;
+    display: inline-block;
+    background-image: url(../img/common/sp_logo.png);
+    background-position: 0 -35px;
+    overflow: hidden;
+  }
+  header .header_wrap .header_wrap_left nav {
+    display: flex;
+    margin: auto 0px;
+    transform: translateY(-5px);
+  }
+  header .header_wrap .header_wrap_left nav p {
+    align-content: center;
+    margin: 34px 0 0 34px;
+  }
+  header .header_wrap .header_wrap_left nav p:last-child {
+    margin-right: 34px;
+  }
+  header .header_wrap .header_wrap_left .search_wrap {
+    position: relative;
+    align-content: center;
+    border-radius: 15px;
+    border: 1px solid #d2d2d2;
+    margin: auto 0;
+    padding: 5px 22px;
+    transform: translateY(50%);
+    -webkit-margin-start: 2px;
+            margin-inline-start: 2px;
+    -webkit-margin-end: 2px;
+            margin-inline-end: 2px;
+  }
+  header .header_wrap .header_wrap_left .search_wrap i {
+    background-image: url(../img/common/sp_button.png);
+    background-position: -242px -632px;
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    left: 5px;
+  }
+  header .header_wrap .header_wrap_left .search_wrap input {
+    position: relative;
+    width: 130px;
+    font-size: 13px;
+    border: 0;
+    left: 8px;
+  }
+  header .header_wrap .header_wrap_right {
+    font-family: "NanumBarunGothic", sans-serif;
+    color: #8c8c8c;
+    font-size: 13px;
+    font-weight: 400;
+    display: flex;
+    float: right;
+    margin-left: 60px;
+    margin-bottom: 10px;
+  }
+  header .header_wrap .header_wrap_right p {
+    align-content: center;
+    margin: 20px;
   }
 }
 .item div img {

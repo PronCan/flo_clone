@@ -117,6 +117,9 @@ header {
         min-width: 955px;
         max-width: 1600px;
         width: 100%;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
         .header_wrap_left {
             display: flex;
             h1 {
@@ -176,7 +179,6 @@ header {
             @include setSubMenuFont;
             display: flex;
             float: right;
-            margin: -61px 81px 0 0;
             p {
                 align-content: center;
                 margin: 34px 0 0 34px;
@@ -457,24 +459,100 @@ footer {
     }
 }
 
-// 1050 header width 100%
-@media (max-width: 1055px) {
-    header {
-        width: 100%;
-        .header_wrap {
-            width: 100%;
-            display: flex;
-            justify-content: space-between;
-        }
-        .header_wrap_right {
-            margin: 0px;
-            padding: 0px;
-        }
-    }
-}
 // tablet css screen
 // 1024px ~ 768px
 @media (max-width: $size2) {
+    header {
+        width: 100%;
+        height: 95px;
+        position: fixed;
+        top: 0;
+        left: 0;
+        background-color: #fff;
+        z-index: 99;
+        display: flex;
+        .header_wrap {
+            @include setMenuFontBold;
+            position: relative;
+            min-width: 955px;
+            max-width: 1600px;
+            width: 100%;
+            display: flex;
+            justify-content: space-evenly;
+            flex-direction: column;
+            align-items: flex-start;
+            .header_wrap_left {
+                display: flex;
+                h1 {
+                    margin: 37px 0 0 81px;
+                    vertical-align: middle;
+                    a {
+                        span.logo {
+                            width: 55px;
+                            height: 23px;
+                            display: inline-block;
+                            background-image: url(../img/common/sp_logo.png);
+                            background-position: 0 -35px;
+                            overflow: hidden;
+                        }
+                    }
+                }
+                nav {
+                    display: flex;
+                    margin: auto 0px;
+                    transform: translateY(-5px);
+                    p {
+                        align-content: center;
+                        margin: 34px 0 0 34px;
+                        &:last-child {
+                            margin-right: 34px;
+                        }
+                    }
+                }
+                .search_wrap {
+                    position: relative;
+                    align-content: center;
+                    border-radius: 15px;
+                    border: 1px solid #d2d2d2;
+                    margin: auto 0;
+                    padding: 5px 22px;
+                    transform: translateY(50%);
+                    margin-inline-start: 2px;
+                    margin-inline-end: 2px;
+                    i {
+                        background-image: url(../img/common/sp_button.png);
+                        background-position: -242px -632px;
+                        width: 25px;
+                        height: 25px;
+                        position: absolute;
+                        left: 5px;
+                    }
+                    input {
+                        position: relative;
+                        width: 130px;                    
+                        font-size: 13px;
+                        border: 0;
+                        left: 8px;
+                    }
+                }
+            }
+            .header_wrap_right {
+                @include setSubMenuFont;
+                display: flex;
+                float: right;
+                margin-left: 60px;
+                margin-bottom: 10px;
+                p {
+                    align-content: center;
+                    margin: 20px;
+                }
+            }
+        }
+    }
+}
+
+// 955px
+@media (max-width: $size3) {
     
 }
 
