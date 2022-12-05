@@ -298,10 +298,12 @@ main {
         .menu_wrap {
             padding-top: 50px;
             @for $i from 1 to 5 {
-                .menu#{$i} ul li a {
+                .menu#{$i} ul li {
                     @for $j from 1 to 13 {
                         &:nth-of-type(#{$j}) {
                             background-image: url(../img/sub1/bg_menu/bg_menu#{$i}_#{$j}.jpg);
+                            background-repeat: no-repeat;
+                            border-radius: 6px;
                         }   
                     }
                 }

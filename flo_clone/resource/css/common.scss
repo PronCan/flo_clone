@@ -4,7 +4,8 @@ $size1 : 1600px; // pc max
 $size2 : 1024px; // tablet max
 $size3 : 955px; // pc min
 $size4 : 768px; // tablet min
-$size5 : 480px; // mobile max
+$size5 : 767px; // mobile max
+// $size5 : 480px; // mobile max
 
 $font_name: 'NanumBarunGothic',sans-serif;
 
@@ -473,4 +474,7 @@ footer {
 }
 
 // moblie css screen //
-// ~765px (480px)
+// ~767px (480px)
+@media (max-width: $size5) {
+
+}
