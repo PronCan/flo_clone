@@ -418,7 +418,7 @@ main {
     main {
         max-width: $size2;
         min-width: $size4;
-        width: 100%;
+        width: 90%;
         font-family: $font_name;
         .main_inner {
             position: relative;
@@ -649,7 +649,7 @@ main {
                             padding: 0px;
                             flex-wrap: wrap;
                             .item {
-                                width: 17.4%;
+                                width: 22%;
                                 margin-top: 20px;
                                 margin-right: 20px;
                                 &:hover {
@@ -707,7 +707,7 @@ main {
                             margin: 0px auto;
                             flex-wrap: wrap;
                             .item {
-                                width: 17.4%;
+                                width: 22%;
                                 margin-top: 20px;
                                 margin-right: 20px;
                                 .content2_img_wrap {
