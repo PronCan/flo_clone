@@ -60,14 +60,12 @@ header {
   left: 0;
   background-color: #fff;
   z-index: 99;
-  display: flex;
 }
 header .header_wrap {
   font-family: "NanumBarunGothic", sans-serif;
   color: #333;
   font-weight: 500;
   position: relative;
-  max-width: 1600px;
   width: 100%;
   display: flex;
   justify-content: space-evenly;
@@ -135,6 +133,7 @@ header .header_wrap .header_wrap_right {
   font-weight: 400;
   display: flex;
   float: right;
+  margin-right: 80px;
 }
 header .header_wrap .header_wrap_right p {
   align-content: center;
@@ -312,7 +311,6 @@ footer .footer_wrap .footer_company2 .copyright2 p {
   z-index: 500;
 }
 .player_section .player_wrap {
-  max-width: 1600px;
   padding: 0 80px 40px 80px;
   display: flex;
   margin: 0 auto;
@@ -417,23 +415,21 @@ footer .footer_wrap .footer_company2 .copyright2 p {
 @media (max-width: 1024px) {
   header {
     width: 100%;
-    height: 95px;
+    height: 115px;
     position: fixed;
     top: 0;
     left: 0;
     background-color: #fff;
     z-index: 99;
-    display: flex;
   }
   header .header_wrap {
     font-family: "NanumBarunGothic", sans-serif;
     color: #333;
     font-weight: 500;
     position: relative;
-    max-width: 1600px;
     width: 100%;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     flex-direction: column;
     align-items: flex-start;
   }
