@@ -46,7 +46,6 @@ $def_text_color_white: #fff;
 }
 
 body {
-    overflow: hidden;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -74,9 +73,8 @@ a:hover {
 }
 
 .wrap {
-    width: 100%;
+    width: 955px;
     margin: 0 auto;
-    margin-left: 80px;
     padding: 95px 80px 40px 80px;
 }
 
@@ -117,7 +115,7 @@ header {
         @include setMenuFontBold;
         position: relative;
         // min-width: 955px;
-        // max-width: 1600px;
+        max-width: 1600px;
         width: 100%;
         display: flex;
         justify-content: space-evenly;
@@ -338,6 +336,7 @@ footer {
 .player_section {
     width: 100%;
     height: 111px;
+    position: relative;
     // min-width: 955px;
     background-color: #000;
     // background-color: #d2d2d2;
@@ -347,7 +346,7 @@ footer {
     z-index: 500;
     .player_wrap {
         // min-width: 955px;
-        // max-width: 1600px;
+        max-width: 1600px;
         padding: 0 80px 40px 80px;
         display: flex;
         margin: 0 auto;
@@ -367,9 +366,8 @@ footer {
             }
         }
         .player_controller {
-            width: 375px;
             .player_controller_top{
-                width: 100%;
+                width: 375px;
                 margin: 0 auto;
                 padding-top: 23px;
                 text-align: center;
@@ -464,17 +462,6 @@ footer {
 // tablet css screen
 // 1024px ~ 768px
 @media (max-width: $size2) {
-<<<<<<< HEAD
-<<<<<<< HEAD
-    .wrap {
-        width: 100%;
-        margin: 0 auto;
-        padding: 95px 80px 40px 80px;
-    }
-=======
->>>>>>> parent of 6592a34 (221206)
-=======
->>>>>>> parent of 6592a34 (221206)
     header {
         width: 100%;
         height: 95px;
@@ -488,7 +475,7 @@ footer {
             @include setMenuFontBold;
             position: relative;
             // min-width: 955px;
-            // max-width: 1600px;
+            max-width: 1600px;
             width: 100%;
             display: flex;
             justify-content: space-evenly;

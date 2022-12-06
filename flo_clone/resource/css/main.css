@@ -1,6 +1,5 @@
 @import url(http://www.openhiun.com/hangul/nanumbarungothic.css);
 body {
-  overflow: hidden;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -31,9 +30,8 @@ a:hover {
 }
 
 .wrap {
-  width: 100%;
+  width: 955px;
   margin: 0 auto;
-  margin-left: 80px;
   padding: 95px 80px 40px 80px;
 }
 
@@ -69,6 +67,7 @@ header .header_wrap {
   color: #333;
   font-weight: 500;
   position: relative;
+  max-width: 1600px;
   width: 100%;
   display: flex;
   justify-content: space-evenly;
@@ -313,6 +312,7 @@ footer .footer_wrap .footer_company2 .copyright2 p {
   z-index: 500;
 }
 .player_section .player_wrap {
+  max-width: 1600px;
   padding: 0 80px 40px 80px;
   display: flex;
   margin: 0 auto;
@@ -415,17 +415,6 @@ footer .footer_wrap .footer_company2 .copyright2 p {
   height: 31px;
 }
 @media (max-width: 1024px) {
-<<<<<<< HEAD
-<<<<<<< HEAD
-  .wrap {
-    width: 100%;
-    margin: 0 auto;
-    padding: 95px 80px 40px 80px;
-  }
-=======
->>>>>>> parent of 6592a34 (221206)
-=======
->>>>>>> parent of 6592a34 (221206)
   header {
     width: 100%;
     height: 95px;
@@ -441,6 +430,7 @@ footer .footer_wrap .footer_company2 .copyright2 p {
     color: #333;
     font-weight: 500;
     position: relative;
+    max-width: 1600px;
     width: 100%;
     display: flex;
     justify-content: space-evenly;
@@ -534,16 +524,14 @@ main {
 main .main_inner {
   position: relative;
   margin: 0 auto;
-  width: 80%;
 }
 main .main_inner .swiper {
-  width: 90%;
+  width: 100%;
   height: 392px;
   margin-top: 20px;
   display: block;
   position: relative;
   box-sizing: content-box;
-  margin: 0 auto;
 }
 main .main_inner .swiper .swiper_content {
   width: 100%;
@@ -916,7 +904,9 @@ main .main_inner .content_wrap .section_content_wrap img {
 
 @media (max-width: 1024px) {
   main {
-    width: 100%;
+    max-width: 1024px;
+    min-width: 768px;
+    width: 90%;
     font-family: "NanumBarunGothic", sans-serif;
   }
   main .main_inner {
@@ -1179,7 +1169,7 @@ main .main_inner .content_wrap .content .content_item .content_sub2 {
     flex-wrap: wrap;
   }
   main .main_inner .content_wrap .content .content_item .content_sub1 .item {
-    width: 17.4%;
+    width: 22%;
     margin-top: 20px;
     margin-right: 20px;
   }
@@ -1242,409 +1232,7 @@ main .main_inner .content_wrap .content .content_item .content_sub2 {
     flex-wrap: wrap;
   }
   main .main_inner .content_wrap .content .content_item .content_sub2 .item {
-    width: 17.4%;
-    margin-top: 20px;
-    margin-right: 20px;
-  }
-  main .main_inner .content_wrap .content .content_item .content_sub2 .item .content2_img_wrap {
-    position: relative;
-    cursor: pointer;
-  }
-  main .main_inner .content_wrap .content .content_item .content_sub2 .item .content2_img_wrap img {
-    border: 0.5px solid rgba(0, 0, 0, 0.05);
-    border-radius: 6px;
-  }
-  main .main_inner .content_wrap .content .content_item .content_sub2 .item .content2_img_wrap img.img_svg {
-    width: 68px;
-    height: 44px;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    border: 0;
-  }
-  main .main_inner .content_wrap .content .content_item .content_sub2 .item .content2_img_wrap span.dark_cover {
-    width: 175px;
-    height: 175px;
-    background-color: rgba(0, 0, 0, 0);
-    border-radius: 6px;
-    position: absolute;
-    top: 0;
-    left: 0;
-  }
-  main .main_inner .content_wrap .content .content_item .content_sub2 .item .content2_img_wrap span.dark_cover:hover {
-    background-color: rgba(0, 0, 0, 0.3);
-  }
-  main .main_inner .content_wrap .content .content_item .content_sub2 .item .content2_img_wrap button.item_play {
-    position: absolute;
-    bottom: 0;
-    right: 0;
-  }
-  main .main_inner .content_wrap .content .content_item .content_sub2 .item .content2_img_wrap button.item_play:hover svg path {
-    fill: #3f3fff;
-    stroke: #3f3fff;
-  }
-  main .main_inner .content_wrap .content .content_item .content_sub2 .item .item_title {
-    font-size: 15px;
-    font-weight: 400;
-    margin-bottom: 5px;
-    color: #333;
-  }
-  main .main_inner .content_wrap .content .content_item .content_sub2 .item .item_title:hover {
-    color: #3f3fff;
-  }
-  main .main_inner .content_wrap .content .content_item .content_sub2 .item .item_desc {
-    margin: 5px 3px 0;
-    font-size: 13px;
-    color: #969696;
-  }
-  main .main_inner .content_wrap .content .content_item .content_sub2 .item .item_desc:hover {
-    color: #3f3fff;
-  }
-  main .main_inner .content_wrap .section_content_wrap {
-    padding-top: 60px;
-    width: 100%;
-    height: 172px;
-  }
-  main .main_inner .content_wrap .section_content_wrap img {
-    width: 100%;
-    height: 100%;
-    border-radius: 6px;
-  }
-}
-@media (max-width: 768px) {
-  main {
-    width: 100%;
-    font-family: "NanumBarunGothic", sans-serif;
-  }
-  main .main_inner {
-    position: relative;
-    margin: 0 auto;
-  }
-  main .main_inner .swiper {
-    width: 70%;
-    height: auto;
-    margin-top: 20px;
-    display: flex;
-    position: relative;
-    box-sizing: content-box;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-  main .main_inner .swiper .swiper_content {
-    width: 100%;
-    height: 830px;
-    background-color: #4c4863;
-    border-radius: 6px;
-    position: relative;
-    cursor: pointer;
-  }
-  main .main_inner .swiper .swiper_content .swiper_content_left {
-    cursor: pointer;
-    position: relative;
-    width: 100%;
-  }
-  main .main_inner .swiper .swiper_content .swiper_content_left div {
-    position: relative;
-    padding: 40px 0 0 40px;
-    width: 230px;
-    z-index: 4;
-  }
-  main .main_inner .swiper .swiper_content .swiper_content_left div h3 {
-    margin: 0;
-    padding: 0;
-    font-size: 28px;
-    font-weight: 800;
-    line-height: 40px;
-    padding-bottom: 20px;
-    color: #fff;
-  }
-  main .main_inner .swiper .swiper_content .swiper_content_left div p {
-    color: #fff;
-    font-size: 14px;
-    font-weight: 100;
-    line-height: 20px;
-    position: absolute;
-    padding: 0;
-    margin: 0;
-  }
-  main .main_inner .swiper .swiper_content .swiper_content_left div p span.bar {
-    padding: 0 10px;
-    font-size: 9px;
-    color: #fff;
-    opacity: 0.7;
-    text-align: center;
-  }
-  main .main_inner .swiper .swiper_content .swiper_content_left button {
-    z-index: 4;
-    background-image: url(../img/common/sp_button.png);
-    background-position: -119px -208px;
-    position: absolute;
-    width: 54px;
-    height: 54px;
-    left: 40px;
-    top: 200px;
-    bottom: 40px;
-  }
-  main .main_inner .swiper .swiper_content .swiper_content_left button:hover {
-    background-position: -60px -208px;
-  }
-  main .main_inner .swiper .swiper_content .swiper_content_right {
-    width: 100%;
-    display: flex;
-    float: left;
-    padding-top: 400px;
-    padding-left: 0;
-    position: absolute;
-    transform: translateY(-110px);
-    flex-direction: column;
-    left: 40px;
-    top: 0;
-  }
-  main .main_inner .swiper .swiper_content .swiper_content_right ul {
-    display: flex;
-    flex-direction: column;
-    width: 50%;
-  }
-  main .main_inner .swiper .swiper_content .swiper_content_right ul li {
-    display: flex;
-    width: auto;
-    padding: 10px 0;
-  }
-  main .main_inner .swiper .swiper_content .swiper_content_right ul li img {
-    width: 45px;
-    height: 45px;
-    border-radius: 4px;
-    vertical-align: top;
-  }
-  main .main_inner .swiper .swiper_content .swiper_content_right ul li div {
-    display: flex;
-    flex-direction: column;
-  }
-  main .main_inner .swiper .swiper_content .swiper_content_right ul li div .swiper_title {
-    margin: 5px 0 0 20px;
-    width: 210px;
-    max-width: 210px;
-    font-weight: 400;
-    font-size: 15px;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    color: #fff;
-  }
-  main .main_inner .swiper .swiper_content .swiper_content_right ul li div .swiper_artist {
-    margin: 5px 0 0 20px;
-    display: block;
-    margin-top: 4px;
-    font-size: 12px;
-    color: #fff;
-    opacity: 0.6;
-  }
-  main .main_inner .swiper .swiper_controller {
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    top: 0;
-    left: 0;
-  }
-  main .main_inner .swiper .swiper_controller .swiper_btn {
-    height: 100%;
-    align-content: center;
-    width: 55px;
-    height: 55px;
-  }
-  main .main_inner .swiper .swiper_controller .btn_left {
-    left: 0;
-    background-image: url(../img/common/sp_button.png);
-    background-position: -248px -60px;
-    transform: translateX(-55px);
-  }
-  main .main_inner .swiper .swiper_controller .btn_left:hover {
-    background-position: -248px 0px;
-  }
-  main .main_inner .swiper .swiper_controller .btn_right {
-    right: 0;
-    background-image: url(../img/common/sp_button.png);
-    background-position: 0 -208px;
-    transform: translate(55px);
-  }
-  main .main_inner .swiper .swiper_controller .btn_right:hover {
-    background-position: -248px -120px;
-  }
-  main .main_inner .swiper .swiper_dot_wrap {
-    display: flex;
-    width: 100%;
-    height: 30px;
-    margin-top: 30px;
-    justify-content: center;
-    padding: 3px 0 10px 15px;
-    text-align: center;
-  }
-  main .main_inner .swiper .swiper_dot_wrap .swiper_dot {
-    margin-right: 10px;
-    cursor: pointer;
-    width: 6px;
-    height: 6px;
-    border-radius: 6px;
-    background-color: #333;
-    opacity: 0.3;
-  }
-  main .main_inner .content_wrap {
-    width: 70%;
-    overflow: hidden;
-  }
-  main .main_inner .content_wrap .content {
-    padding-top: 60px;
-  }
-  main .main_inner .content_wrap .content .content_title {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-  main .main_inner .content_wrap .content .content_title p {
-    font-size: 22px;
-    font-weight: 700;
-  }
-  main .main_inner .content_wrap .content .content_title div {
-    display: flex;
-    height: 28px;
-    align-items: center;
-  }
-  main .main_inner .content_wrap .content .content_title div ul {
-    display: flex;
-    font-size: 13px;
-    font-weight: 400;
-    margin: auto 0;
-  }
-  main .main_inner .content_wrap .content .content_title div ul li {
-    padding-right: 10px;
-  }
-  main .main_inner .content_wrap .content .content_title div .slide_btn {
-    display: flex;
-  }
-  main .main_inner .content_wrap .content .content_title div .slide_btn a {
-    width: 15px;
-    height: 15px;
-    padding-left: 5px;
-    padding-right: 5px;
-    font-size: 13px;
-    font-weight: 400;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer;
-    background: #fff;
-    position: relative;
-  }
-  main .main_inner .content_wrap .content .content_title div .slide_btn a:first-child {
-    transform: rotate(180deg);
-  }
-  main .main_inner .content_wrap .content .content_title div .slide_btn a object {
-    pointer-events: none;
-    position: block;
-    width: 100%;
-    height: 100%;
-  }
-  main .main_inner .content_wrap .content .content_title2 {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    flex-direction: column;
-  }
-  main .main_inner .content_wrap .content .content_title2 p {
-    font-size: 22px;
-    font-weight: 700;
-    margin: 5px 0;
-  }
-  main .main_inner .content_wrap .content .content_title2 p:last-child {
-    font-size: 13px;
-    font-weight: 400;
-  }
-  main .main_inner .content_wrap .content .content_item {
-    display: flex;
-    flex-wrap: wrap;
-  }
-  main .main_inner .content_wrap .content .content_item .content_sub1,
-main .main_inner .content_wrap .content .content_item .content_sub2 {
-    flex-wrap: wrap;
-    width: auto;
-  }
-  main .main_inner .content_wrap .content .content_item .content_sub1 {
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    margin: 0px auto;
-    padding: 0px;
-    flex-wrap: wrap;
-    justify-content: flex-start;
-  }
-  main .main_inner .content_wrap .content .content_item .content_sub1 .item {
-    width: 30%;
-    margin-top: 20px;
-    margin-right: 20px;
-  }
-  main .main_inner .content_wrap .content .content_item .content_sub1 .item:hover {
-    cursor: pointer;
-  }
-  main .main_inner .content_wrap .content .content_item .content_sub1 .item .content1_img_wrap {
-    position: relative;
-    width: 175px;
-    height: 175px;
-    cursor: pointer;
-  }
-  main .main_inner .content_wrap .content .content_item .content_sub1 .item .content1_img_wrap img {
-    border: 0.5px solid rgba(0, 0, 0, 0.05);
-    border-radius: 6px;
-  }
-  main .main_inner .content_wrap .content .content_item .content_sub1 .item .content1_img_wrap span.dark_cover {
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0);
-    border-radius: 6px;
-    position: absolute;
-    top: 0;
-    left: 0;
-  }
-  main .main_inner .content_wrap .content .content_item .content_sub1 .item .content1_img_wrap span.dark_cover:hover {
-    background-color: rgba(0, 0, 0, 0.3);
-  }
-  main .main_inner .content_wrap .content .content_item .content_sub1 .item .content1_img_wrap button.item_play {
-    position: absolute;
-    bottom: 0;
-    right: 0;
-  }
-  main .main_inner .content_wrap .content .content_item .content_sub1 .item .content1_img_wrap button.item_play:hover svg path {
-    fill: #3f3fff;
-    stroke: #3f3fff;
-  }
-  main .main_inner .content_wrap .content .content_item .content_sub1 .item .item_title {
-    font-size: 15px;
-    font-weight: 400;
-    margin-bottom: 5px;
-    color: #333;
-  }
-  main .main_inner .content_wrap .content .content_item .content_sub1 .item .item_title:hover {
-    color: #3f3fff;
-  }
-  main .main_inner .content_wrap .content .content_item .content_sub1 .item .item_desc {
-    margin: 5px 3px 0;
-    font-size: 13px;
-    color: #969696;
-  }
-  main .main_inner .content_wrap .content .content_item .content_sub1 .item .item_desc:hover {
-    color: #3f3fff;
-  }
-  main .main_inner .content_wrap .content .content_item .content_sub2 {
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    margin: 0px auto;
-    flex-wrap: wrap;
-    justify-content: flex-start;
-  }
-  main .main_inner .content_wrap .content .content_item .content_sub2 .item {
-    width: 30%;
+    width: 22%;
     margin-top: 20px;
     margin-right: 20px;
   }
