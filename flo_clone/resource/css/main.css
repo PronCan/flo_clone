@@ -503,6 +503,167 @@ footer .footer_wrap .footer_company2 .copyright2 p {
     margin: 20px;
   }
 }
+@media (max-width: 955px) {
+  footer {
+    width: 90%;
+    margin-top: 70px;
+    margin-bottom: 110px;
+  }
+  footer .footer_wrap {
+    font-family: "NanumBarunGothic", sans-serif;
+    color: #333;
+    font-weight: 400;
+    font-weight: 700;
+  }
+  footer .footer_wrap .footer_fnb {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    box-sizing: border-box;
+    overflow: hidden;
+    border-bottom: 1px solid #f5f5f5;
+  }
+  footer .footer_wrap .footer_fnb nav {
+    display: flex;
+  }
+  footer .footer_wrap .footer_fnb nav p {
+    padding-right: 20px;
+  }
+  footer .footer_wrap .footer_fnb .footer_sns_btn {
+    display: flex;
+  }
+  footer .footer_wrap .footer_fnb .footer_sns_btn p {
+    padding-left: 16px;
+  }
+  footer .footer_wrap .footer_fnb .footer_sns_btn p img {
+    display: inline-block;
+    width: 22px;
+    height: 18px;
+    vertical-align: middle;
+  }
+  footer .footer_wrap .footer_company {
+    font-family: "NanumBarunGothic", sans-serif;
+    color: #333;
+    font-weight: 400;
+  }
+  footer .footer_wrap .footer_company ul {
+    display: flex;
+  }
+  footer .footer_wrap .footer_company ul li {
+    padding: 0 15px 20px 16px;
+    position: relative;
+  }
+  footer .footer_wrap .footer_company ul li:first-child {
+    padding-left: 0px;
+  }
+  footer .footer_wrap .footer_company ul li::before {
+    display: block;
+    position: absolute;
+    top: 3px;
+    left: 0;
+    width: 1px;
+    height: 12px;
+    background: #d8d8d8;
+    content: "";
+  }
+  footer .footer_wrap .footer_company ul li:first-child::before {
+    display: none;
+    content: "";
+  }
+  footer .footer_wrap .footer_company .footer_address {
+    font-family: "NanumBarunGothic", sans-serif;
+    color: #8c8c8c;
+    font-size: 13px;
+    font-weight: 400;
+  }
+  footer .footer_wrap .footer_company .footer_address p {
+    padding-bottom: 10px;
+  }
+  footer .footer_wrap .footer_company .footer_address span {
+    padding: 0 8px;
+    position: relative;
+  }
+  footer .footer_wrap .footer_company .footer_address span:nth-of-type(odd) {
+    padding-left: 0px;
+  }
+  footer .footer_wrap .footer_company .footer_address span::before {
+    display: block;
+    position: absolute;
+    top: 1px;
+    left: 0;
+    width: 1px;
+    height: 11px;
+    background-color: #d8d8d8;
+    content: "";
+  }
+  footer .footer_wrap .footer_company .footer_address span:first-child::before {
+    display: none;
+    content: "";
+  }
+  footer .footer_wrap .footer_company .footer_address .addr2 span:nth-of-type(odd)::before {
+    display: none;
+    content: "";
+  }
+  footer .footer_wrap .footer_company .copyright {
+    display: flex;
+    justify-content: space-between;
+  }
+  footer .footer_wrap .footer_company .copyright p {
+    font-family: "NanumBarunGothic", sans-serif;
+    color: #333;
+    font-weight: 400;
+    font-size: 11px;
+  }
+  footer .footer_wrap .footer_company .copyright p:last-child {
+    font-family: "NanumBarunGothic", sans-serif;
+    color: #8c8c8c;
+    font-size: 13px;
+    font-weight: 400;
+    font-size: 11px;
+  }
+  footer .footer_wrap .footer_company2 {
+    font-family: "NanumBarunGothic", sans-serif;
+    color: #333;
+    font-weight: 400;
+  }
+  footer .footer_wrap .footer_company2 ul {
+    display: flex;
+    justify-content: center;
+  }
+  footer .footer_wrap .footer_company2 ul li {
+    padding: 0 15px 0 16px;
+    position: relative;
+  }
+  footer .footer_wrap .footer_company2 ul li:first-child {
+    padding-left: 0px;
+  }
+  footer .footer_wrap .footer_company2 ul li::before {
+    display: block;
+    position: absolute;
+    top: 2px;
+    left: 0;
+    width: 1px;
+    height: 12px;
+    background: #d8d8d8;
+    content: "";
+  }
+  footer .footer_wrap .footer_company2 ul li:first-child::before {
+    display: none;
+    content: "";
+  }
+  footer .footer_wrap .footer_company2 .copyright2 {
+    display: flex;
+    justify-content: center;
+  }
+  footer .footer_wrap .footer_company2 .copyright2 p {
+    font-family: "NanumBarunGothic", sans-serif;
+    color: #989898;
+    font-size: 14px;
+    line-height: 20px;
+    font-size: 12px;
+  }
+}
 .item div img {
   width: 175px;
   height: 175px;
@@ -1023,14 +1184,14 @@ main .main_inner .content_wrap .section_content_wrap img {
     opacity: 0.6;
   }
   main .main_inner .swiper .swiper_controller {
-    width: 100%;
+    width: 90%;
     height: 100%;
     position: absolute;
     display: flex;
     justify-content: space-between;
     align-items: center;
     top: 0;
-    left: 0;
+    left: 40px;
   }
   main .main_inner .swiper .swiper_controller .swiper_btn {
     height: 100%;

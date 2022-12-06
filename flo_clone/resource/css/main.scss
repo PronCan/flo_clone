@@ -536,14 +536,14 @@ main {
                     }
                 }
                 .swiper_controller {
-                    width: 100%;
+                    width: 90%;
                     height: 100%;
                     position: absolute;
                     display: flex;
                     justify-content: space-between;
                     align-items: center;
                     top: 0;
-                    left: 0;
+                    left: 40px;
                     .swiper_btn {
                         height: 100%;
                         align-content: center;
