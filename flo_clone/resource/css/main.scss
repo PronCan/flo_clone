@@ -66,15 +66,13 @@ main {
     .main_inner {
         position: relative;
         margin: 0 auto;
-        width: 80%;
         .swiper {
-            width: 90%;
+            width: 100%;
             height: 392px;
             margin-top: 20px;
             display: block;
             position: relative;
             box-sizing: content-box;
-            margin: 0 auto;
             .swiper_content {
                 width: 100%;
                 height: 320px;
@@ -418,8 +416,8 @@ main {
 // media tablet (move header, main > .item)
 @media (max-width: $size2) {
     main {
-        // max-width: $size2;
-        // min-width: $size4;
+        max-width: $size2;
+        min-width: $size4;
         width: 100%;
         font-family: $font_name;
         .main_inner {
