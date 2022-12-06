@@ -1,5 +1,6 @@
 @import url(http://www.openhiun.com/hangul/nanumbarungothic.css);
 body {
+  overflow: hidden;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -30,8 +31,9 @@ a:hover {
 }
 
 .wrap {
-  width: 955px;
+  width: 100%;
   margin: 0 auto;
+  margin-left: 80px;
   padding: 95px 80px 40px 80px;
 }
 
@@ -67,7 +69,6 @@ header .header_wrap {
   color: #333;
   font-weight: 500;
   position: relative;
-  max-width: 1600px;
   width: 100%;
   display: flex;
   justify-content: space-evenly;
@@ -312,7 +313,6 @@ footer .footer_wrap .footer_company2 .copyright2 p {
   z-index: 500;
 }
 .player_section .player_wrap {
-  max-width: 1600px;
   padding: 0 80px 40px 80px;
   display: flex;
   margin: 0 auto;
@@ -415,10 +415,17 @@ footer .footer_wrap .footer_company2 .copyright2 p {
   height: 31px;
 }
 @media (max-width: 1024px) {
+<<<<<<< HEAD
+<<<<<<< HEAD
   .wrap {
+    width: 100%;
     margin: 0 auto;
     padding: 95px 80px 40px 80px;
   }
+=======
+>>>>>>> parent of 6592a34 (221206)
+=======
+>>>>>>> parent of 6592a34 (221206)
   header {
     width: 100%;
     height: 95px;
@@ -434,7 +441,6 @@ footer .footer_wrap .footer_company2 .copyright2 p {
     color: #333;
     font-weight: 500;
     position: relative;
-    max-width: 1600px;
     width: 100%;
     display: flex;
     justify-content: space-evenly;
@@ -510,325 +516,6 @@ footer .footer_wrap .footer_company2 .copyright2 p {
     align-content: center;
     margin: 20px;
   }
-  footer {
-    margin-top: 70px;
-    margin-bottom: 110px;
-  }
-  footer .footer_wrap {
-    font-family: "NanumBarunGothic", sans-serif;
-    color: #333;
-    font-weight: 400;
-    font-weight: 700;
-  }
-  footer .footer_wrap .footer_fnb {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 20px;
-    padding-bottom: 20px;
-    box-sizing: border-box;
-    overflow: hidden;
-    border-bottom: 1px solid #f5f5f5;
-  }
-  footer .footer_wrap .footer_fnb nav {
-    display: flex;
-  }
-  footer .footer_wrap .footer_fnb nav p {
-    padding-right: 20px;
-  }
-  footer .footer_wrap .footer_fnb .footer_sns_btn {
-    display: flex;
-  }
-  footer .footer_wrap .footer_fnb .footer_sns_btn p {
-    padding-left: 16px;
-  }
-  footer .footer_wrap .footer_fnb .footer_sns_btn p img {
-    display: inline-block;
-    width: 22px;
-    height: 18px;
-    vertical-align: middle;
-  }
-  footer .footer_wrap .footer_company {
-    font-family: "NanumBarunGothic", sans-serif;
-    color: #333;
-    font-weight: 400;
-  }
-  footer .footer_wrap .footer_company ul {
-    display: flex;
-  }
-  footer .footer_wrap .footer_company ul li {
-    padding: 0 15px 20px 16px;
-    position: relative;
-  }
-  footer .footer_wrap .footer_company ul li:first-child {
-    padding-left: 0px;
-  }
-  footer .footer_wrap .footer_company ul li::before {
-    display: block;
-    position: absolute;
-    top: 3px;
-    left: 0;
-    width: 1px;
-    height: 12px;
-    background: #d8d8d8;
-    content: "";
-  }
-  footer .footer_wrap .footer_company ul li:first-child::before {
-    display: none;
-    content: "";
-  }
-  footer .footer_wrap .footer_company .footer_address {
-    font-family: "NanumBarunGothic", sans-serif;
-    color: #8c8c8c;
-    font-size: 13px;
-    font-weight: 400;
-  }
-  footer .footer_wrap .footer_company .footer_address p {
-    padding-bottom: 10px;
-  }
-  footer .footer_wrap .footer_company .footer_address span {
-    padding: 0 8px;
-    position: relative;
-  }
-  footer .footer_wrap .footer_company .footer_address span:nth-of-type(odd) {
-    padding-left: 0px;
-  }
-  footer .footer_wrap .footer_company .footer_address span::before {
-    display: block;
-    position: absolute;
-    top: 1px;
-    left: 0;
-    width: 1px;
-    height: 11px;
-    background-color: #d8d8d8;
-    content: "";
-  }
-  footer .footer_wrap .footer_company .footer_address span:first-child::before {
-    display: none;
-    content: "";
-  }
-  footer .footer_wrap .footer_company .footer_address .addr2 span:nth-of-type(odd)::before {
-    display: none;
-    content: "";
-  }
-  footer .footer_wrap .footer_company .copyright {
-    display: flex;
-    justify-content: space-between;
-  }
-  footer .footer_wrap .footer_company .copyright p {
-    font-family: "NanumBarunGothic", sans-serif;
-    color: #333;
-    font-weight: 400;
-    font-size: 11px;
-  }
-  footer .footer_wrap .footer_company .copyright p:last-child {
-    font-family: "NanumBarunGothic", sans-serif;
-    color: #8c8c8c;
-    font-size: 13px;
-    font-weight: 400;
-    font-size: 11px;
-  }
-  footer .footer_wrap .footer_company2 {
-    font-family: "NanumBarunGothic", sans-serif;
-    color: #333;
-    font-weight: 400;
-  }
-  footer .footer_wrap .footer_company2 ul {
-    display: flex;
-    justify-content: center;
-  }
-  footer .footer_wrap .footer_company2 ul li {
-    padding: 0 15px 0 16px;
-    position: relative;
-  }
-  footer .footer_wrap .footer_company2 ul li:first-child {
-    padding-left: 0px;
-  }
-  footer .footer_wrap .footer_company2 ul li::before {
-    display: block;
-    position: absolute;
-    top: 2px;
-    left: 0;
-    width: 1px;
-    height: 12px;
-    background: #d8d8d8;
-    content: "";
-  }
-  footer .footer_wrap .footer_company2 ul li:first-child::before {
-    display: none;
-    content: "";
-  }
-  footer .footer_wrap .footer_company2 .copyright2 {
-    display: flex;
-    justify-content: center;
-  }
-  footer .footer_wrap .footer_company2 .copyright2 p {
-    font-family: "NanumBarunGothic", sans-serif;
-    color: #989898;
-    font-size: 14px;
-    line-height: 20px;
-    font-size: 12px;
-  }
-}
-@media (max-width: 955px) {
-  footer {
-    width: 70%;
-    margin-top: 70px;
-    margin-bottom: 110px;
-  }
-  footer .footer_wrap {
-    font-family: "NanumBarunGothic", sans-serif;
-    color: #333;
-    font-weight: 400;
-    font-weight: 700;
-  }
-  footer .footer_wrap .footer_fnb {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 20px;
-    padding-bottom: 20px;
-    box-sizing: border-box;
-    overflow: hidden;
-    border-bottom: 1px solid #f5f5f5;
-  }
-  footer .footer_wrap .footer_fnb nav {
-    display: flex;
-  }
-  footer .footer_wrap .footer_fnb nav p {
-    padding-right: 20px;
-  }
-  footer .footer_wrap .footer_fnb .footer_sns_btn {
-    display: flex;
-  }
-  footer .footer_wrap .footer_fnb .footer_sns_btn p {
-    padding-left: 16px;
-  }
-  footer .footer_wrap .footer_fnb .footer_sns_btn p img {
-    display: inline-block;
-    width: 22px;
-    height: 18px;
-    vertical-align: middle;
-  }
-  footer .footer_wrap .footer_company {
-    font-family: "NanumBarunGothic", sans-serif;
-    color: #333;
-    font-weight: 400;
-  }
-  footer .footer_wrap .footer_company ul {
-    display: flex;
-  }
-  footer .footer_wrap .footer_company ul li {
-    padding: 0 15px 20px 16px;
-    position: relative;
-  }
-  footer .footer_wrap .footer_company ul li:first-child {
-    padding-left: 0px;
-  }
-  footer .footer_wrap .footer_company ul li::before {
-    display: block;
-    position: absolute;
-    top: 3px;
-    left: 0;
-    width: 1px;
-    height: 12px;
-    background: #d8d8d8;
-    content: "";
-  }
-  footer .footer_wrap .footer_company ul li:first-child::before {
-    display: none;
-    content: "";
-  }
-  footer .footer_wrap .footer_company .footer_address {
-    font-family: "NanumBarunGothic", sans-serif;
-    color: #8c8c8c;
-    font-size: 13px;
-    font-weight: 400;
-  }
-  footer .footer_wrap .footer_company .footer_address p {
-    padding-bottom: 10px;
-  }
-  footer .footer_wrap .footer_company .footer_address span {
-    padding: 0 8px;
-    position: relative;
-  }
-  footer .footer_wrap .footer_company .footer_address span:nth-of-type(odd) {
-    padding-left: 0px;
-  }
-  footer .footer_wrap .footer_company .footer_address span::before {
-    display: block;
-    position: absolute;
-    top: 1px;
-    left: 0;
-    width: 1px;
-    height: 11px;
-    background-color: #d8d8d8;
-    content: "";
-  }
-  footer .footer_wrap .footer_company .footer_address span:first-child::before {
-    display: none;
-    content: "";
-  }
-  footer .footer_wrap .footer_company .footer_address .addr2 span:nth-of-type(odd)::before {
-    display: none;
-    content: "";
-  }
-  footer .footer_wrap .footer_company .copyright {
-    display: flex;
-    justify-content: space-between;
-  }
-  footer .footer_wrap .footer_company .copyright p {
-    font-family: "NanumBarunGothic", sans-serif;
-    color: #333;
-    font-weight: 400;
-    font-size: 11px;
-  }
-  footer .footer_wrap .footer_company .copyright p:last-child {
-    font-family: "NanumBarunGothic", sans-serif;
-    color: #8c8c8c;
-    font-size: 13px;
-    font-weight: 400;
-    font-size: 11px;
-  }
-  footer .footer_wrap .footer_company2 {
-    font-family: "NanumBarunGothic", sans-serif;
-    color: #333;
-    font-weight: 400;
-  }
-  footer .footer_wrap .footer_company2 ul {
-    display: flex;
-    justify-content: center;
-  }
-  footer .footer_wrap .footer_company2 ul li {
-    padding: 0 15px 0 16px;
-    position: relative;
-  }
-  footer .footer_wrap .footer_company2 ul li:first-child {
-    padding-left: 0px;
-  }
-  footer .footer_wrap .footer_company2 ul li::before {
-    display: block;
-    position: absolute;
-    top: 2px;
-    left: 0;
-    width: 1px;
-    height: 12px;
-    background: #d8d8d8;
-    content: "";
-  }
-  footer .footer_wrap .footer_company2 ul li:first-child::before {
-    display: none;
-    content: "";
-  }
-  footer .footer_wrap .footer_company2 .copyright2 {
-    display: flex;
-    justify-content: center;
-  }
-  footer .footer_wrap .footer_company2 .copyright2 p {
-    font-family: "NanumBarunGothic", sans-serif;
-    color: #989898;
-    font-size: 14px;
-    line-height: 20px;
-    font-size: 12px;
-  }
 }
 .item div img {
   width: 175px;
@@ -847,14 +534,16 @@ main {
 main .main_inner {
   position: relative;
   margin: 0 auto;
+  width: 80%;
 }
 main .main_inner .swiper {
-  width: 100%;
+  width: 90%;
   height: 392px;
   margin-top: 20px;
   display: block;
   position: relative;
   box-sizing: content-box;
+  margin: 0 auto;
 }
 main .main_inner .swiper .swiper_content {
   width: 100%;
@@ -1227,8 +916,6 @@ main .main_inner .content_wrap .section_content_wrap img {
 
 @media (max-width: 1024px) {
   main {
-    max-width: 1024px;
-    min-width: 768px;
     width: 100%;
     font-family: "NanumBarunGothic", sans-serif;
   }
