@@ -115,7 +115,7 @@ header {
         @include setMenuFontBold;
         position: relative;
         // min-width: 955px;
-        max-width: 1600px;
+        // max-width: 1600px;
         width: 100%;
         display: flex;
         justify-content: space-evenly;
@@ -346,7 +346,7 @@ footer {
     z-index: 500;
     .player_wrap {
         // min-width: 955px;
-        max-width: 1600px;
+        // max-width: 1600px;
         padding: 0 80px 40px 80px;
         display: flex;
         margin: 0 auto;
@@ -475,7 +475,7 @@ footer {
             @include setMenuFontBold;
             position: relative;
             // min-width: 955px;
-            max-width: 1600px;
+            // max-width: 1600px;
             width: 100%;
             display: flex;
             justify-content: space-evenly;
