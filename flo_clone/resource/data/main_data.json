@@ -1,12 +1,279 @@
 {
-    "content_today_music": [
+    "swiper_content": [
         {
-            "url": "./img/main/menu1_1.jpg",
-            "title": "Portrait",
-            "desc": "아침 (achime)"
+            "title": "겨울햇살과 인디밴드의 조합은 진리",
+            "save_date": "2022.11.21",
+            "list": [
+                {
+                    "url": "./img/main/swiper_01.jpg",
+                    "l_title": "백치",
+                    "l_artist": "쏜애플"
+                },
+                {
+                    "url": "./img/main/swiper_02.jpg",
+                    "l_title": "새소년",
+                    "l_artist": "새소년"
+                },
+                {
+                    "url": "./img/main/swiper_03.jpg",
+                    "l_title": "기억",
+                    "l_artist": "실리카겔"
+                },
+                {
+                    "url": "./img/main/swiper_04.jpg",
+                    "l_title": "어른이 처음이야",
+                    "l_artist": "위수 (WISUE)"
+                },
+                {
+                    "url": "./img/main/swiper_05.jpg",
+                    "l_title": "한 평의 우주",
+                    "l_artist": "엔분의일 (1/N)"
+                },
+                {
+                    "url": "./img/main/swiper_06.jpg",
+                    "l_title": "New born",
+                    "l_artist": "혁오"
+                },
+                {
+                    "url": "./img/main/swiper_01.jpg",
+                    "l_title": "백치",
+                    "l_artist": "쏜애플"
+                },
+                {
+                    "url": "./img/main/swiper_07.jpg",
+                    "l_title": "엎드려서 말을 걸어",
+                    "l_artist": "스테레오버블"
+                },
+                {
+                    "url": "./img/main/swiper_08.jpg",
+                    "l_title": "눈",
+                    "l_artist": "이상의날개"
+                }
+            ]
         },
         {
-            
+            "title": "title2",
+            "save_date": "2022.11.23",
+            "list": [
+
+            ]
+        }
+    ],
+    "main_content": [
+        {
+            "index": "1",
+            "content_type": "1",
+            "content": [
+                {
+                    "url": "./img/main/menu1_1.jpg",
+                    "title": "Portrait",
+                    "desc": "아침 (achime)"
+                },
+                {
+                    "url": "./img/main/menu1_2.jpg",
+                    "title": "Indigo",
+                    "desc": "RM"
+                },
+                {
+                    "url": "./img/main/menu1_3.jpg",
+                    "title": "사내[MAN]",
+                    "desc": "정동원 (achime)"
+                },
+                {
+                    "url": "./img/main/menu1_4.jpg",
+                    "title": "웃어주었어",
+                    "desc": "이승윤"
+                },
+                {
+                    "url": "./img/main/menu1_5.jpg",
+                    "title": "새집",
+                    "desc": "바미"
+                },
+                {
+                    "url": "./img/main/menu1_6.jpg",
+                    "title": "강남오아시스",
+                    "desc": "이희문 & 까데호"
+                },
+                {
+                    "url": "./img/main/menu1_7.jpg",
+                    "title": "오마이키스 OST PART 3",
+                    "desc": "유소나"
+                },
+                {
+                    "url": "./img/main/menu1_8.jpg",
+                    "title": "러브플라워",
+                    "desc": "김오키"
+                },
+                {
+                    "url": "./img/main/menu1_9.jpg",
+                    "title": "왜 떠나",
+                    "desc": "이혜민"
+                },
+                {
+                    "url": "./img/main/menu1_10.jpg",
+                    "title": "Treasure",
+                    "desc": "나히 (Nahee)"
+                }
+            ]
+        },
+        {
+            "index": "2",
+            "content_type": "2",
+            "content": [
+                {
+                    "url": "./img/main/menu2_1.jpg",
+                    "svg": "./svg/main/num01.svg",
+                    "title": "송은이·김숙 비밀보장",
+                    "desc": "예능/미스터리"
+                },
+                {
+                    "url": "./img/main/menu2_2.jpg",
+                    "svg": "./svg/main/num02.svg",
+                    "title": "갓쇼의 사이다썰",
+                    "desc": "예능/미스터리"
+                },
+                {
+                    "url": "./img/main/menu2_3.jpg",
+                    "svg": "./svg/main/num03.svg",
+                    "title": "MBC 이진우의 손에 잡히는 경제",
+                    "desc": "시사/경제"
+                },
+                {
+                    "url": "./img/main/menu2_4.jpg",
+                    "svg": "./svg/main/num04.svg",
+                    "title": "윌라 오디오북",
+                    "desc": "오디오드라마/오디오북"
+                },
+                {
+                    "url": "./img/main/menu2_5.jpg",
+                    "svg": "./svg/main/num05.svg",
+                    "title": "엄마의 인형동화",
+                    "desc": "ASMR/힐링"
+                },
+                {
+                    "url": "./img/main/menu2_6.jpg",
+                    "svg": "./svg/main/num06.svg",
+                    "title": "위로받는 밤 ASMR",
+                    "desc": "ASMR/힐링"
+                },
+                {
+                    "url": "./img/main/menu2_7.jpg",
+                    "svg": "./svg/main/num07.svg",
+                    "title": "샤론최&장도연의 있어빌리티",
+                    "desc": "교양/학습"
+                },
+                {
+                    "url": "./img/main/menu2_8.jpg",
+                    "svg": "./svg/main/num08.svg",
+                    "title": "마음 챙겨주는 힐링&수면음악",
+                    "desc": "ASMR/힐링, 스포츠/건강"
+                },
+                {
+                    "url": "./img/main/menu2_9.jpg",
+                    "svg": "./svg/main/num09.svg",
+                    "title": "Tigger ASMR",
+                    "desc": "ASMR/힐링"
+                },
+                {
+                    "url": "./img/main/menu2_10.jpg",
+                    "svg": "./svg/main/num10.svg",
+                    "title": "모니카 립제이의 캡틴모립",
+                    "desc": "바미"
+                }
+            ]
+        },
+        {
+            "index": "3",
+            "content_type": "1",
+            "content": [
+                {
+                    "url": "./img/main/menu3_1.jpg",
+                    "title": "슈베르트, [겨울나그네] 중 21곡 여인숙"
+                },
+                {
+                    "url": "./img/main/menu3_2.jpg",
+                    "title": "굳이 이거 말을 해야하나? (with.윤덕원)"
+                },
+                {
+                    "url": "./img/main/menu3_3.jpg",
+                    "title": "노벨 문학상을 받은 가수가 있다? 노래에 과몰입 하자!"
+                },
+                {
+                    "url": "./img/main/menu3_4.jpg",
+                    "title": "우리가 변화해야만 하는 이유 | 줄리안 퀸타르트 방송인"
+                },
+                {
+                    "url": "./img/main/menu3_5.jpg",
+                    "title": "끝날 때까지 끝난 게 아니야!"
+                },
+                {
+                    "url": "./img/main/menu3_6.jpg",
+                    "title": "[윌라] 오만과 편견"
+                },
+                {
+                    "url": "./img/main/menu3_7.jpg",
+                    "title": "[ASMR] 가을의 포근한 그레이트홀에서 자습하기"
+                },
+                {
+                    "url": "./img/main/menu3_8.jpg",
+                    "title": "죽림에 누워 거문고와 술을, 바람부는 대나무 숲"
+                },
+                {
+                    "url": "./img/main/menu3_9.jpg",
+                    "title": "1982년의 빌보드 1위 곡들 - 1부"
+                },
+                {
+                    "url": "./img/main/menu3_10.jpg",
+                    "title": "올해 최고의 녹~진한 수면 음악 모음 (빗소리 포함)"
+                }
+            ]
+        },
+        {
+            "index": "4",
+            "content_type": "1",
+            "content": [
+                {
+                    "url": "./img/main/menu4_1.jpg"
+                },
+                {
+                    "url": "./img/main/menu4_2.jpg"
+                },
+                {
+                    "url": "./img/main/menu4_3.jpg"
+                },
+                {
+                    "url": "./img/main/menu4_4.jpg"
+                },
+                {
+                    "url": "./img/main/menu4_5.jpg"
+                }
+            ]
+        },
+        {
+            "index": "5",
+            "content_type": "1",
+            "content": [
+                {
+                    "url": "./img/main/menu5_1.jpg",
+                    "title": "추억의 국내 겨울 노래 Top 40"
+                },
+                {
+                    "url": "./img/main/menu5_2.jpg",
+                    "title": "마음은 벌써 미리 크리스마스"
+                },
+                {
+                    "url": "./img/main/menu5_3.jpg",
+                    "title": "별다방 분위기의 크리스마스 재즈 캐롤"
+                },
+                {
+                    "url": "./img/main/menu5_4.jpg",
+                    "title": "노동요도 연말 느낌으로 꾸며봤어"
+                },
+                {
+                    "url": "./img/main/menu5_5.jpg",
+                    "title": "코노에서 이 노래 떼창 못 참지"
+                }
+            ]
         }
     ]
 }
