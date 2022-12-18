@@ -17,7 +17,7 @@ function addSwiperData() {
     });
 }
 function setSwiperData() {
-    var html;
+    var html = '';
     html += `<div class="swiper_content">`;
     html += `<div class="swiper_content_left">
             <div>
