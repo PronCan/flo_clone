@@ -1,4 +1,7 @@
-@import url(http://www.openhiun.com/hangul/nanumbarungothic.css);
+// @import url(http://www.openhiun.com/hangul/nanumbarungothic.css);
+@import url('../font/NanumBarunGothic.81201ee3.woff2');
+@import url('../font/NanumBarunGothicBold.f27dbbb5.woff2');
+@import url('../font/NanumBarunGothicLight.f76db64e.woff2');
 
 $size1 : 1600px; // pc max
 $size2 : 1024px; // tablet max
@@ -72,7 +75,7 @@ a:hover {
 }
 
 .wrap {
-    width: 955px;
+    // width: 1600px;
     margin: 0 auto;
     padding: 95px 80px 40px 80px;
 }
