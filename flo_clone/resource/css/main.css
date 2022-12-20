@@ -834,6 +834,10 @@ footer .footer_wrap .footer_company2 .copyright2 p {
   opacity: 1 !important;
 }
 
+.hidden {
+  display: none;
+}
+
 main {
   width: 100%;
   font-family: "NanumBarunGothic", sans-serif;
@@ -844,7 +848,6 @@ main .main_inner {
 }
 main .main_inner .swiper {
   width: 100%;
-  height: 392px;
   margin-top: 20px;
   display: block;
   position: relative;
@@ -1344,7 +1347,7 @@ main .main_inner .content_wrap .section_content_wrap img {
     opacity: 0.6;
   }
   main .main_inner .swiper .swiper_controller {
-    width: 90%;
+    width: 100%;
     height: 100%;
     position: absolute;
     display: flex;
@@ -1637,7 +1640,7 @@ main .main_inner .content_wrap .content .content_item .content_sub2 {
   }
   main .main_inner .swiper .swiper_content {
     width: 90%;
-    height: 600px;
+    height: 630px;
     background-color: #4c4863;
     border-radius: 6px;
     position: relative;
@@ -1741,7 +1744,7 @@ main .main_inner .content_wrap .content .content_item .content_sub2 {
     opacity: 0.6;
   }
   main .main_inner .swiper .swiper_controller {
-    width: 90%;
+    width: 100%;
     height: 100%;
     position: absolute;
     display: flex;

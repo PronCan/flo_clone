@@ -60,6 +60,10 @@ $bg_colors: #4c4863; //#465550, #674d45;
     opacity: 1!important;
 }
 
+.hidden {
+    display: none;
+}
+
 main {
     width: 100%;
     font-family: $font_name;
@@ -68,12 +72,15 @@ main {
         margin: 0 auto;
         .swiper {
             width: 100%;
-            height: 392px;
+            // height: 392px;
             margin-top: 20px;
             display: block;
             position: relative;
             box-sizing: content-box;
             .swiper_content {
+                // &:not(:first-of-type) {
+                //     display: none;
+                // }
                 width: 100%;
                 height: 320px;
                 background-color: $bg_colors;
@@ -537,7 +544,7 @@ main {
                     }
                 }
                 .swiper_controller {
-                    width: 90%;
+                    width: 100%;
                     height: 100%;
                     position: absolute;
                     display: flex;
@@ -801,7 +808,7 @@ main {
                 justify-content: center;
                 .swiper_content {
                     width: 90%;
-                    height: 600px;
+                    height: 630px;
                     background-color: $bg_colors;
                     border-radius: 6px;
                     position: relative;
@@ -905,7 +912,7 @@ main {
                     }
                 }
                 .swiper_controller {
-                    width: 90%;
+                    width: 100%;
                     height: 100%;
                     position: absolute;
                     display: flex;
