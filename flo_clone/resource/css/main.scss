@@ -1,6 +1,8 @@
 @import './common.scss';
 // @import url(./common.css);
 $bg_colors: #4c4863; //#465550, #674d45;
+$bg_colors2: #674d45;
+$bg_colors3: #465550;
 
 @mixin font_content_title {
     font-size: 22px;
@@ -87,6 +89,9 @@ main {
                 border-radius: 6px;
                 position: relative;
                 cursor: pointer;
+                &:nth-child(even) {
+                    background-color: $bg_colors2;
+                }
                 .swiper_content_left {
                     cursor: pointer;
                     position: relative;
@@ -143,7 +148,7 @@ main {
                     float: left;
                     padding-left: 35%;
                     position: absolute;
-                    transform: translateY(-90px);
+                    transform: translateY(-170px);
                     ul {
                         display: flex;
                         flex-direction: column;
@@ -869,7 +874,7 @@ main {
                         float: left;
                         padding-left: 50%;
                         position: absolute;
-                        transform: translateY(-110px);
+                        transform: translateY(-170px);
                         flex-direction: column;
                         ul {
                             display: flex;

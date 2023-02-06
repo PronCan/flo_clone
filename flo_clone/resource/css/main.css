@@ -861,6 +861,9 @@ main .main_inner .swiper .swiper_content {
   position: relative;
   cursor: pointer;
 }
+main .main_inner .swiper .swiper_content:nth-child(even) {
+  background-color: #674d45;
+}
 main .main_inner .swiper .swiper_content .swiper_content_left {
   cursor: pointer;
   position: relative;
@@ -917,7 +920,7 @@ main .main_inner .swiper .swiper_content .swiper_content_right {
   float: left;
   padding-left: 35%;
   position: absolute;
-  transform: translateY(-90px);
+  transform: translateY(-170px);
 }
 main .main_inner .swiper .swiper_content .swiper_content_right ul {
   display: flex;
@@ -1702,7 +1705,7 @@ main .main_inner .content_wrap .content .content_item .content_sub2 {
     float: left;
     padding-left: 50%;
     position: absolute;
-    transform: translateY(-110px);
+    transform: translateY(-170px);
     flex-direction: column;
   }
   main .main_inner .swiper .swiper_content .swiper_content_right ul {
