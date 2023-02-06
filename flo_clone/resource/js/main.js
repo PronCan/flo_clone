@@ -68,7 +68,8 @@ function setSwiperData() {
                 </div>
                 <button></button>
                 </div>`;
-        html += `<div class="swiper_content_right"><ul>`;
+        j == 0 ? html += `<div class="swiper_content_right" style="transform: translateY(-170px) !important;"><ul>`
+                : html += `<div class="swiper_content_right"><ul>`;
 
         for(let i=0; i<json.swiper_content[j].list.length; i++) {
             if(i==json.swiper_content[j].list.length/2) {

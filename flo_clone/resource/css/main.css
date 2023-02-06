@@ -917,7 +917,7 @@ main .main_inner .swiper .swiper_content .swiper_content_right {
   float: left;
   padding-left: 35%;
   position: absolute;
-  transform: translateY(-110px);
+  transform: translateY(-90px);
 }
 main .main_inner .swiper .swiper_content .swiper_content_right ul {
   display: flex;
@@ -1305,7 +1305,7 @@ main .main_inner .content_wrap .section_content_wrap img {
     float: left;
     padding-left: 50%;
     position: absolute;
-    transform: translateY(-110px);
+    transform: translateY(-170px);
     flex-direction: column;
   }
   main .main_inner .swiper .swiper_content .swiper_content_right ul {
